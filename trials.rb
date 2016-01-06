@@ -34,3 +34,31 @@
 # end
 #
 # add_nums(4, 6)  # => 10
+
+def kizzmit(x)
+  (0..(x)).each do |n|  # => 0..12
+    if n % 5 == 0       # => true, false, false, false, false, true, false, false, false, false, true, false, false
+      puts "kizz"       # => nil, nil, nil
+    elsif n % 3 == 0    # => false, false, true, false, true, false, false, true, false, true
+      puts "mit"        # => nil, nil, nil, nil
+    else
+      puts n            # => nil, nil, nil, nil, nil, nil
+    end                 # => nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil, nil
+  end                   # => 0..12
+end
+
+kizzmit(12)  # => 0..12
+
+# >> kizz
+# >> 1
+# >> 2
+# >> mit
+# >> 4
+# >> kizz
+# >> mit
+# >> 7
+# >> 8
+# >> mit
+# >> kizz
+# >> 11
+# >> mit
