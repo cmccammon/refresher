@@ -34,17 +34,17 @@
 # end
 #
 # add_nums(4, 6)  # => 10
-
-def kizzmit(x)
-  (0..(x)).each do |n|
-    if n % 5 == 0
-      puts "kizz"
-    elsif n % 3 == 0
-      puts "mit"
-    else
-      puts n
-    end
-  end
-end
-
-kizzmit(12)
+#
+# def kizzmit(x)
+#   (0..(x)).each do |n|
+#     if n % 5 == 0
+#       puts "kizz"
+#     elsif n % 3 == 0
+#       puts "mit"
+#     else
+#       puts n
+#     end
+#   end
+# end
+#
+# kizzmit(12)
