@@ -63,17 +63,23 @@
 # end
 #
 # puts "#{my_name} is my name too!"
-
-def print_header(&block)
-  puts "-- Header --"
-  header = "in the beginning"
-  puts "-- End of Header --"
-  end_header = "the end"
-  block.call(header, end_header)
-end
-
-print_header do | header, end_header |
-  puts "#{header}"
-  puts "stuff goes here"
-  puts "#{end_header}"
-end
+#
+# def print_header(&block)
+#   puts "-- Header --"
+#   header = "in the beginning"
+#   puts "-- End of Header --"
+#   end_header = "the end"
+#   block.call(header, end_header)
+# end
+#
+# print_header do | header, end_header |
+#   puts "#{header}"
+#   puts "stuff goes here"
+#   puts "#{end_header}"
+# end
+# tree = "butternut"
+# tree.each_char { |chr| print "#{chr}-"  }
+#
+# 10.downto(1) { |n| print "#{n},"}  # => 10
+#
+#  >> 10,9,8,7,6,5,4,3,2,1,
