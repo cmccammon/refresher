@@ -48,16 +48,32 @@
 # end
 #
 # kizzmit(12)
+#
+# def get_name(prompt, &tree)
+#   print prompt + ": "
+#   name = gets.chomp
+#   print "age: "
+#   age = gets.chomp
+#   tree.call(name, age)
+#   name
+# end
+#
+# my_name = get_name("enter your name") do |name, age|
+#   puts "Hi #{name}, age #{age}!"
+# end
+#
+# puts "#{my_name} is my name too!"
 
-def get_name
-  print "Enter your name:"
-  name = gets.chomp
-  yield name
-  name
+def print_header(&block)
+  puts "-- Header --"
+  header = "in the beginning"
+  puts "-- End of Header --"
+  end_header = "the end"
+  block.call(header, end_header)
 end
 
-my_name = get_name do |name|
-  puts "Hi #{name}!"
+print_header do | header, end_header |
+  puts "#{header}"
+  puts "stuff goes here"
+  puts "#{end_header}"
 end
-
-puts "#{my_name} is my name too!"
