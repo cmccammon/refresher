@@ -48,3 +48,16 @@
 # end
 #
 # kizzmit(12)
+
+def get_name
+  print "Enter your name:"
+  name = gets.chomp
+  yield name
+  name
+end
+
+my_name = get_name do |name|
+  puts "Hi #{name}!"
+end
+
+puts "#{my_name} is my name too!"
