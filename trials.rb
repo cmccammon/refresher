@@ -82,4 +82,11 @@
 #
 # 10.downto(1) { |n| print "#{n},"}  # => 10
 #
-#  >> 10,9,8,7,6,5,4,3,2,1,
+
+array = [1,2,3,4,5,6,7,8,9]
+
+array.each { |it| print "-#{it}-"}
+
+array.select { |i| i < 3 }
+
+array.reject { |r| r % 3 == 0 }
