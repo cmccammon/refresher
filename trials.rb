@@ -82,11 +82,29 @@
 #
 # 10.downto(1) { |n| print "#{n},"}  # => 10
 #
+#
+# array = [1,2,3,4,5,6,7,8,9]
+#
+# array.each { |it| print "-#{it}-"}
+#
+# array.select { |i| i < 3 }
+#
+# array.reject { |r| r % 3 == 0 }
 
-array = [1,2,3,4,5,6,7,8,9]
 
-array.each { |it| print "-#{it}-"}
 
-array.select { |i| i < 3 }
+def staircase(n)
+  n.times do |x|  # => 6
+    puts "#"      # => nil, nil, nil, nil, nil, nil
+  end             # => 6
 
-array.reject { |r| r % 3 == 0 }
+end
+
+staircase(6)  # => 6
+
+# >> #
+# >> #
+# >> #
+# >> #
+# >> #
+# >> #
