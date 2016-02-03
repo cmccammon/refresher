@@ -7,12 +7,11 @@
 #   break if x >= 10
 # end
 
-# y =1
-#
-# while y <= 45
-#   y += 1
-#   next unless (y % 2) == 0
-#   puts y
+# y = 6
+# x = 0
+# while x < y
+#   x += 1
+#   puts "#" * x
 # end
 
 # numbers = [1,2,3,4,5,6,7,8]
@@ -90,21 +89,3 @@
 # array.select { |i| i < 3 }
 #
 # array.reject { |r| r % 3 == 0 }
-
-
-
-def staircase(n)
-  n.times do |x|  # => 6
-    puts "#"      # => nil, nil, nil, nil, nil, nil
-  end             # => 6
-
-end
-
-staircase(6)  # => 6
-
-# >> #
-# >> #
-# >> #
-# >> #
-# >> #
-# >> #
