@@ -1,16 +1,15 @@
-def staircase(n)
-  x = 0           # => 0
-  until x == n    # => false, false, false, false, false, false, true
-    x += 1        # => 1, 2, 3, 4, 5, 6
-    puts "#" * x  # => nil, nil, nil, nil, nil, nil
-  end             # => nil
+# def staircase(n)
+#   x = 0
+#   until x == n
+#     x += 1
+#     puts "#" * x
+#   end
+# end
+#
+# staircase(6)
+n = 6
+x = 0
+while x <= n - 1
+    x += 1
+    puts " " * ( n - x ) + "#" * x
 end
-
-staircase(6)  # => nil
-
-# >> #
-# >> ##
-# >> ###
-# >> ####
-# >> #####
-# >> ######
