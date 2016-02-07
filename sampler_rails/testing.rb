@@ -23,3 +23,20 @@
 # end
 #
 # check(15)
+# (1..10).each { |it| print "-#{it}-"}
+def test
+  array = (1..15).select { |r| r.even? }  # => [2, 4, 6, 8, 10, 12, 14]
+  array.to_s                              # => "[2, 4, 6, 8, 10, 12, 14]"
+  puts array                              # => nil
+end
+
+
+test  # => nil
+
+# >> 2
+# >> 4
+# >> 6
+# >> 8
+# >> 10
+# >> 12
+# >> 14
