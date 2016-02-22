@@ -24,19 +24,13 @@
 #
 # check(15)
 # (1..10).each { |it| print "-#{it}-"}
-def test
-  array = (1..15).select { |r| r.even? }  # => [2, 4, 6, 8, 10, 12, 14]
-  array.to_s                              # => "[2, 4, 6, 8, 10, 12, 14]"
-  puts array                              # => nil
-end
+# def test
+#   array = (1..15).select { |r| r.even? }
+#   array.to_s
+#   puts array
+# end
+#
+#
+# test
 
-
-test  # => nil
-
-# >> 2
-# >> 4
-# >> 6
-# >> 8
-# >> 10
-# >> 12
-# >> 14
+[10000001, 10000002, 10000003, 10000004].inject(0) {|sum, i|  sum + i }  # => 40000010
