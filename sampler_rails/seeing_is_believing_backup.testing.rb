@@ -34,10 +34,10 @@
 # test
 
 # [10000001, 10000002, 10000003, 10000004].inject(0) {|sum, i|  sum + i }
-
-n = 500
-loop do n -= 1
-    break if n <= 150
-end
-
-puts n
+# 
+# n = 500
+# loop do n -= 1
+#     break if n <= 150
+# end
+#
+# puts n
