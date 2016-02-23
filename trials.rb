@@ -89,3 +89,7 @@
 # array.select { |i| i < 3 }
 #
 # array.reject { |r| r % 3 == 0 }
+
+animals = %w(cat dog mouse bird)
+
+animals
