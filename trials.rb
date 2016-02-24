@@ -92,4 +92,4 @@
 
 animals = %w(cat dog mouse bird)
 
-animals
+animals.to_s
