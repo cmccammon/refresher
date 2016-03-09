@@ -91,5 +91,19 @@
 # array.reject { |r| r % 3 == 0 }
 
 animals = %w(cat dog mouse bird)
+skip = 2
 
-animals.to_s
+# def skip_animals(animals, skip)
+#     arr = animals.each_with_index { |value, index| p "#{index}:#{value}" }.reverse.slice!(0, skip)
+#     b = arr.to_s
+#     puts b
+# end
+
+def skip_animals(animals, skip)
+  arr = []
+  animals.each_with_index { |value, index| if index >= skip then arr << "#{index}:#{value}" end }
+  # puts arr.reverse.slice(0, skip).to_s
+  return arr
+end
+
+skip_animals(animals, skip)
